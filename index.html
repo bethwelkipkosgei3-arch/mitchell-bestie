@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mitchell</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffb3d9 0%, #ffcceb 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .heart {
+            font-size: 150px;
+            margin: 30px 0;
+            animation: pulse 1.5s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .message {
+            color: #fff;
+            font-size: 1.3em;
+            margin: 30px 0;
+            max-width: 600px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .signature {
+            color: #fff;
+            font-size: 1.5em;
+            margin-top: 50px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .sparkles {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ffeb3b;
+            border-radius: 50%;
+            animation: twinkle 2s ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mitchell ✨</h1>
+        
+        <div class="heart">❤️</div>
+        
+        <div class="message">
+            <p>You're an amazing friend!</p>
+            <p style="margin-top: 20px;">Thank you for being such a wonderful person and for all the amazing moments we share together.</p>
+            <p style="margin-top: 20px;">You bring so much joy and light into my life. Keep being your awesome self! 💕</p>
+        </div>
+        
+        <div class="signature">
+            — From Bethwel 💌
+        </div>
+    </div>
+</body>
+</html>
