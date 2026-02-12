@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Wish</title>
+    <style>
+        body {
+            background-color: #cd1571; /* Strong pink background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background-color: rgb(125, 28, 44);
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .celebration {
+            display: none;
+            font-size: 24px;
+            color: rgb(212, 116, 185);
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <h1>Happy Valentine's Day, Keisha!</h1>
+    <p>i love you so much and will you be my valentine?</p>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+    <div class="celebration" id="celebrationMessage">🎉 Thank you, Keisha for accepting to be my valentines girlfriend and i collins love you so much🎉🎉❤❤❤❤🧡🧡🧡💓💓💓💓💓💓💓💓💓💓💓💓💓💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💖💘💘💘💘💘💘 🎉</div>
+
+    <script>
+        document.getElementById('yesBtn').onclick = function() {
+            document.getElementById('celebrationMessage').style.display = 'inline-block'; // Show thank you message
+        };
+        document.getElementById('noBtn').onclick = function() {
+            alert('Collins loves you no matter what!');
+        };
+    </script>
+</body>
+</html>
